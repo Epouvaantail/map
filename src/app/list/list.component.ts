@@ -14,10 +14,8 @@ export class ListComponent {
   constructor(private appcomponent: AppComponent) { }
   ngOnInit(): void {
     this.data = this.appcomponent.loadData();
-    console.log(this.appcomponent.loadData)
     this.data = this.appcomponent.data;
     function onSubmit(formValue: {first: String, last: string}) {
-      console.log(formValue);
     }
   }
 }

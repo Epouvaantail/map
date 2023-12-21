@@ -34,7 +34,6 @@ export class MapComponent {
 
   ngOnInit(): void {
     this.data = this.appcomponent.loadData();
-    console.log(this.appcomponent.loadData)
     this.data = this.appcomponent.data;
   }
 
@@ -142,7 +141,6 @@ export class MapComponent {
       });
       
       let cities = this.data;
-      console.log(cities)
 
       navigator.geolocation.getCurrentPosition((position) => {
         this.locationJs = position.coords;

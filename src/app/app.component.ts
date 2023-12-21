@@ -20,7 +20,6 @@ export class AppComponent {
   loadData(): void {
     this.http.get('../../assets/data.json').subscribe((response:any)=> {
       this.data = response;
-      console.log(this.data)
       return response
     });
   }

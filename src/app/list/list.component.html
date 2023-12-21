@@ -1,0 +1,25 @@
+<h1>List of cities</h1>
+<ul class="citiesList">
+    <li *ngFor="let cities of data; let i = index;">
+        <p>Name</p>
+        <input placeholder="{{ data[i].title }}"/>
+        <p>latitude: {{ data[i].latitude }}</p>
+        <p>longitude: {{data[i].longitude }}</p>
+        <p>population</p>
+        <input placeholder="{{data[i].population }}"/>
+        <p>country</p>
+        <input placeholder="{{data[i].country }}"/><br/>
+        <button>Delete</button>
+        <button>Modify</button>
+        <hr/>
+    </li>
+    <form id="cityForm">
+        <h1>Add City</h1>
+          <input value onChange={} type="string" placeholder="Enter the name of the city" name="title" required/>
+          <input value={latitude} onChange={} type="number" placeholder="Enter latitude (number)" name="latitude" required/>
+          <input value={longitude} onChange={} type="number" placeholder="Enter longitude (number)" name="longitude" required/>
+          <input value={population} onChange={} type="number" placeholder="Enter population (number)" name="population" required/>
+          <input value={country} onChange={} type="number" placeholder="Enter the country" name="country" required/>
+          <button type="button" onClick={retrieve}>Sumbit</button>
+      </form>
+</ul>

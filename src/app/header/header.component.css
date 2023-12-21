@@ -1,0 +1,23 @@
+header {
+    background-color: #252525;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    color: gray;
+}

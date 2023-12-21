@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Tokyo",
+      "country": "Japan",
+      "latitude": 35.6785,
+      "longitude": 139.6823,
+      "population": 13960000
+    },
+    {
+      "title": "Moscow",
+      "country": "Russia",
+      "latitude": 55.7558,
+      "longitude": 37.6176,
+      "population": 11980000
+    },
+    {
+      "title": "London",
+      "country": "England",
+      "latitude": 51.5002,
+      "longitude": -0.1262,
+      "population": 8982000
+    },
+    {
+      "title": "Copenhagen",
+      "country": "Danemark",
+      "latitude": 55.6763,
+      "longitude": 12.5681,
+      "population": 602481
+    },
+    {
+      "title": "Paris",
+      "country": "France",
+      "latitude": 48.8567,
+      "longitude": 2.351,
+      "population": 2161000
+    },
+    {
+      "title": "Washington",
+      "country": "USA",
+      "latitude": 38.8921,
+      "longitude": -77.0241,
+      "population": 712816
+    }
+  ]

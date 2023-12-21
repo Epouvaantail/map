@@ -1,6 +1,7 @@
 import { Component, Inject, NgZone, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+// j'utilise amCharts5 pour afficher la carte ainsi que les markers
 
 // amCharts imports
 import * as am5 from "@amcharts/amcharts5";
@@ -32,6 +33,7 @@ export class MapComponent {
     }
   }
 
+  // charger les données des villes depuis le service dans le composant appComponent
   ngOnInit(): void {
     this.data = this.appcomponent.loadData();
     this.data = this.appcomponent.data;
@@ -111,10 +113,6 @@ export class MapComponent {
           cursorOverStyle: "pointer"
         });
       
-        // container.events.on("click", (e) => {
-        //   window.location.href = e.target.dataItem.dataContext.url;
-        // });
-      
         let circle = container.children.push(
           am5.Circle.new(root, {
             radius: 4,
@@ -142,6 +140,7 @@ export class MapComponent {
       
       let cities = this.data;
 
+      // afficher la position actuel de l'appareil
       navigator.geolocation.getCurrentPosition((position) => {
         this.locationJs = position.coords;
 
@@ -153,6 +152,7 @@ export class MapComponent {
           population: 1
         };
 
+        // fusion des villes avec la position actuel
         const newCitiesList = [...cities, CurrentPosition]
       
       

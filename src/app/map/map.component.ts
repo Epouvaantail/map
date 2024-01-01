@@ -1,5 +1,6 @@
 import { Component, Inject, NgZone, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import data from '../../assets/data.json'
 
 // j'utilise amCharts5 pour afficher la carte ainsi que les markers
 
@@ -35,8 +36,9 @@ export class MapComponent {
 
   // charger les données des villes depuis le service dans le composant appComponent
   ngOnInit(): void {
-    this.data = this.appcomponent.loadData();
-    this.data = this.appcomponent.data;
+    // this.data = this.appcomponent.loadData();
+    // this.data = this.appcomponent.data;
+    this.data = data;
   }
 
   ngAfterViewInit() {
@@ -121,7 +123,6 @@ export class MapComponent {
             strokeOpacity: 0
           })
         );
-      
       
         let circle2 = container.children.push(
           am5.Circle.new(root, {

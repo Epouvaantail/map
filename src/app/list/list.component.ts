@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppComponent } from '../app.component';
+import data from '../../assets/data.json'
 
 @Component({
   selector: 'app-list',
@@ -15,7 +16,8 @@ export class ListComponent {
 
   // charger les données des villes depuis le service dans le composant appComponent
   ngOnInit(): void {
-    this.data = this.appcomponent.loadData();
-    this.data = this.appcomponent.data;
+    // this.data = this.appcomponent.loadData();
+    // this.data = this.appcomponent.data;
+    this.data = data
   }
 }

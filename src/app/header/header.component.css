@@ -20,4 +20,5 @@ li {
 
 a:hover {
     color: gray;
+    text-decoration: underline;
 }

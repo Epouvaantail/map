@@ -1,6 +1,6 @@
 # Map
 
-Here a little application in Angular JS, display a map with some marker on some cities and a marker of your current position (first page), display informations of the cities which have a marker (second page). Using amchart for the map, json file for the cities information.
+Here a little application in Angular JS, display a map with some marker on some cities and a marker of your current position (first page), display informations of the cities which have a marker (second page). Using amchart for the map, json file for the cities information. The second page isn't fisnished yet
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
